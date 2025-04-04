@@ -29,26 +29,31 @@ const HowItWorks: React.FC = () => {
       <div className="container mx-auto px-6">
         <h2 className="section-heading text-center">How It Works</h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-6 mt-10">
           <ProcessStep 
             number={1}
-            title="Request & Submit Requirements"
-            description="Tell us your specific materials goals, sourcing needs, and sustainability targets."
+            title="Submit Requirements"
+            description="Tell us your materials goals - but be prepared to wait. Most companies struggle to clearly define what they actually need."
           />
           <ProcessStep 
             number={2}
-            title="Quality Assessment & Approval"
-            description="We screen potential materials through quality testing and verification before finalizing the selection."
+            title="Quality Assessment"
+            description="We'll screen potential materials, though industry standards vary widely and verification can be spotty at best."
           />
           <ProcessStep 
             number={3}
-            title="Shipping Logistics"
-            description="We secure all your OEM provided materials and match them with the most efficient access to your sustainable recycling partner."
+            title="Partner Matching"
+            description="We attempt to match you with recycling partners, assuming any are available in your region with proper certification."
           />
           <ProcessStep 
             number={4}
-            title="Seamless Transaction & Delivery"
-            description="Once everything is approved, we coordinate and coordinate logistics to deliver your high-quality recycled materials on time."
+            title="Shipping Logistics"
+            description="We coordinate logistics, which often involves navigating complex regulations and unpredictable delays in the supply chain."
+          />
+          <ProcessStep 
+            number={5}
+            title="Transaction & Delivery"
+            description="Final delivery occurs - if all parties maintain their commitments and no unforeseen circumstances arise in the process."
             isLast
           />
         </div>
