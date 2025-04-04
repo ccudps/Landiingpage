@@ -29,7 +29,7 @@ const HowItWorks: React.FC = () => {
       <div className="container mx-auto px-6">
         <h2 className="section-heading text-center">How It Works</h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-6 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 mt-10">
           <ProcessStep 
             number={1}
             title="Submit Requirements"
@@ -49,13 +49,20 @@ const HowItWorks: React.FC = () => {
             number={4}
             title="Shipping Logistics"
             description="We coordinate logistics, which often involves navigating complex regulations and unpredictable delays in the supply chain."
-          />
-          <ProcessStep 
-            number={5}
-            title="Transaction & Delivery"
-            description="Final delivery occurs - if all parties maintain their commitments and no unforeseen circumstances arise in the process."
             isLast
           />
+        </div>
+        
+        <div className="mt-16 max-w-2xl mx-auto p-6 border border-gray-200 rounded-lg shadow-sm">
+          <div className="flex items-center gap-4">
+            <div className="process-step-circle">
+              5
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold">Transaction & Delivery</h3>
+              <p className="text-gray-600">Final delivery occurs - if all parties maintain their commitments and no unforeseen circumstances arise in the process.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
